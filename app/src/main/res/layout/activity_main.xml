@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_weight="1"
+    android:id="@+id/data_booking">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/data_booking_2_toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        android:elevation="4dp"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <LinearLayout
+        android:id="@+id/registerInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Order Lapangan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/order_lapangan_label"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/recycler_order_lapangan_view"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recycler_order_lapangan_view"
+                    android:gravity="right"
+                    android:text="Tambah Lapangan"
+                    android:textColor="#66AC41"
+                    android:textSize="14sp"
+                    android:id="@+id/tambah_lapangan_click"
+                    android:clickable="true"
+                    android:onClick="tambah_clicked"/>
+
+                <Button
+                    android:id="@+id/check_out_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tambah_lapangan_click"
+                    android:backgroundTint="#F8A83A"
+                    android:text="CHECK OUT"
+                    android:textColor="#000" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="4dp"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:id="@+id/order_lapangan_layout">
+
+        <TextView
+            android:id="@+id/tanggal_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rabu"
+            android:textStyle="bold"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:layout_below="@+id/tanggal_order"
+            android:id="@+id/lapangan_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lapangan A"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_below="@+id/lapangan_order"
+            android:id="@+id/lapangan_type_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indoor"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_below="@+id/lapangan_type_order"
+            android:id="@+id/lantai_type_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lantai Hijau"
+            android:textSize="12sp"/>
+
+        <View
+            android:id="@+id/pembatas"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lantai_type_order"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#D1D1D1" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
